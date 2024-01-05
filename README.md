@@ -40,7 +40,7 @@ The project structure is deliberately simple, but there's nothing to stop you ad
 │   │   ├── BookInput.ts
 │   ├── resolvers
 │   │   ├── BookResolver.ts
-	├── index.ts
+│	├── index.ts
 ├── .env
 ├── .env.example
 ```
