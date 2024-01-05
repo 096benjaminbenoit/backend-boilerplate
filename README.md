@@ -39,11 +39,11 @@ The project structure is deliberately simple, but there's nothing to stop you ad
 │   ├── inputs
 │   │   ├── BookInput.ts
 │   ├── resolvers
-│   │   ├── BookResolver.ts
-│	├── index.ts
+│       ├── BookResolver.ts
+├── index.ts
 ├── .env
 ├── .env.example
 ```
 Within the project there are simple examples of entities, inputs and resolvers to guide you.
 
-### Make with love ❤️# backend-boilerplate
+### Make with love ❤️
