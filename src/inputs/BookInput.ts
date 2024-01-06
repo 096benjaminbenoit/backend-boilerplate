@@ -7,7 +7,4 @@ export class CreateBookInput {
 }
 
 @InputType()
-export class UpdateBookInput extends CreateBookInput {
-  @Field()
-  id: number;
-}
+export class UpdateBookInput extends CreateBookInput {}

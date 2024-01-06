@@ -2,6 +2,7 @@ import { Resolver, Query, Mutation, Arg } from "type-graphql";
 import { Book } from "../entities/Book";
 import { CreateBookInput, UpdateBookInput } from "../inputs/BookInput";
 import { GraphQLError } from "graphql";
+import { IsAuthenticated } from "../utils/security";
 
 @Resolver()
 export class BookResolver {
@@ -20,6 +21,14 @@ export class BookResolver {
     return Book.find();
   }
 
+  @Query(() => Book)
+  @IsAuthenticated() // This decorator will check if the user is authenticated to protect the resolver. For more information, see the src/utils/security.ts file.
+  async bookById(@Arg("bookId") id: number) {
+    return Book.findOne({
+      where: { id },
+    });
+  }
+
   @Mutation(() => Book)
   async updateBook(
     @Arg("bookId") id: number,
@@ -28,7 +37,7 @@ export class BookResolver {
     const bookToUpdate = await Book.findOneBy({ id });
     if (!bookToUpdate) throw new GraphQLError("not found");
 
-    await Object.assign(bookToUpdate, data);
+    Object.assign(bookToUpdate, data);
 
     await bookToUpdate.save();
     return Book.findOne({
