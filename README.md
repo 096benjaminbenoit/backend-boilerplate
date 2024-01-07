@@ -39,25 +39,24 @@ The project structure is deliberately simple, but there's nothing to stop you ad
 ```bash
 ├── src
 │   ├── database
-│      ├── DataSource.ts // database connexion
+│   │   └── DataSource.ts // database connection
 │   ├── entities // all entities
-│       ├── Book.ts
-│       ├── User.ts
+│   │   ├── Book.ts
+│   │   └── User.ts
 │   ├── inputs // all inputs/dto
-│       ├── BookInput.ts
-│       ├── LoginInput.ts
-│       ├── UserInput.ts
+│   │   ├── BookInput.ts
+│   │   ├── LoginInput.ts
+│   │   └── UserInput.ts
 │   ├── resolvers
-│      ├── BookResolver.ts // a resolver example with CRUD
-│      ├── UserResolver.ts // user gestion (signUp, login ...)
+│   │   ├── BookResolver.ts // a resolver example with CRUD
+│   │   └── UserResolver.ts // user management (signUp, login, ...)
 │   ├── types
-│      ├── interfaces.ts // all interfaces
-│   ├── utils
-│      ├── auth.ts // password gestion and user authentication
-│      ├── jwt.ts // jwt gestion
-│      ├── security.ts // custom decorators to protect resolvers
-├── index.ts
-├── .env.example
+│   │   └── interfaces.ts // all interfaces
+│   └── utils
+│       ├── auth.ts // password management and user authentication
+│       ├── jwt.ts // jwt management
+│       └── security.ts // custom decorators to protect resolvers
+└── index.ts
 ```
 
 ### Make with love ❤️
