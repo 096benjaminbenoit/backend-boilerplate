@@ -4,7 +4,7 @@
 
 ##### On this project : 
 - simple book crud example
-- basic JWT authentication (signUp and Login)
+- basic JWT authentication (SignUp and Login)
 - custom decorator example to protect resolver
 
 ## 📋 Prerequisites
