@@ -60,3 +60,4 @@ The project structure is deliberately simple, but there's nothing to stop you ad
 ```
 
 ### Make with love ❤️
+# booking-barber
