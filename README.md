@@ -1,4 +1,4 @@
-# 🚀 Backend Starter Pack
+# 🚀 GraphQL API Starter Pack
 
 #### This project is a lightweight boilerplate, crafted to kick-start GraphQL API projects using TypeScript, TypeORM, PostgreSQL, GraphQL, Apollo Server, Type-GraphQL, and Docker. It's a robust and flexible foundation, ideal for swiftly building backend applications with some cool tech! 🌐🔧
 
